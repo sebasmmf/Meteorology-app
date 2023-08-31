@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <title>Meteorology App</title>
+</head>
+<body>
+  <header class="header">
+    <a href="https://openweathermap.org/" target="_blank">
+      <img src="./media/logo.png" alt="logo" class="logo">
+    </a>
+  </header>
+  <main class="--center --flex__columns">
+    <div class="container --flex__direction --flex__columns">
+      <!-- Input and Search button to consult the api -->
+      <input class="search" id="search" type="text" placeholder="Write a City">
+      <button class="send btn__styles" id="send">
+              <h1>Search</h1>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search svg" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+      </button>
+      <!-- ------------- -->
+      <!-- Card shows results JSON properties about the weather search-->
+      <section class="weather__result card__info --card__style --background__card" id="weatherResult">
+        <div class="x__closed">
+          <button class="btn__closed" id="btnClosedSearch">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path class="x__icon" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+          </button>
+        </div>
+        <div class="find_weather" id="find_weather"></div>
+      </section>
+      <!-- ------------- -->
+      <!-- Button to consult the current weather in your location  -->
+      <button class="location btn__styles" id="location">
+            <h1>Current Location</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt svg" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+      </button>
+      <!-- ------------- -->
+      <!-- Card shows results JSON properties about the current weather -->
+      <section class="current__weather card__info --card__style --background__card" id="currentWeather">
+        <div class="x__closed">
+          <button class="btn__closed" id="btnClosedCurrent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path class="x__icon" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+          </button>
+        </div>
+        <div id="result"></div>            
+      </section>
+      <!-- ------------- -->
+    </div>
+  </main>
+  <script src="./assets/index.js"></script>
+</body>
+</html

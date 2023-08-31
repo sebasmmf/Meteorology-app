@@ -1,0 +1,198 @@
+.header{
+  background-color: #0A4D68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 5px;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  min-height: 40px;
+  width: 100px;
+  padding: 5px;
+}
+
+.container{
+  min-height: 150px;
+  width: 300px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: dashed 2px #0A4D68;
+  border-radius: 5px;
+}
+
+.container > .search , .location{
+  margin: 10px;
+}
+
+.--center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input__search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #0A4D68;
+  border-radius: 5px;
+}
+
+.search{
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 250px;
+  border: solid 2px #0A4D68;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.search:focus{
+  outline: none;
+}
+
+.send > h1{
+  margin: 10px;
+}
+
+.location > h1{
+  margin: 10px;
+}
+
+.btn__styles{
+  cursor: pointer;
+  background-color: #0a4d6890;
+  height: 30px;
+  width: 250px;
+  border: solid 2px #0a4d68;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__styles:hover{
+  
+  background-color: #0A4D68;
+}
+
+.svg{
+  color: white;
+}
+
+.icons{
+  height: 100px;
+  width: 100px;
+}
+
+.x__closed{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 5px 0 5px;
+}
+
+.btn__closed{
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  background-color: #ffffff81;
+  border: solid 2px #0A4D68;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.btn__closed:hover{
+  background-color: #ffffffc9;
+}
+
+.card__info{
+  min-height: 250px;
+  width: 250px;
+}
+
+.--flex__row{
+  display: flex;
+  flex-direction: row;
+}
+
+.--background__card{
+  background-image: linear-gradient(#05BFDB, #00FFCA);
+  border: solid 2px #0A4D68;
+}
+
+.--card__style{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #222;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.--flex__direction{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.--flex__columns{
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content > h1,h2,h3{
+  margin: 5px 0 ;
+  text-align: center;
+}
+
+.notVisible{
+  display: none;
+}
+
+.weather__result{
+  display: none;
+}
+
+.current__weather{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+.forecast > h1{
+  text-align: center;
+}
+
+.table_icons{
+  height: 45px;
+  width: 45px;
+}
+
+th{
+  margin: 3px;
+  padding: 5px;
+}
