@@ -2,8 +2,9 @@
 const apiId = "469f37dfbf9a754e35eea5e1d31575d1";
 const url_base = 'https://api.openweathermap.org/data/2.5/';
 
-let lon;
-let lat;
+//Longitude and Latitude Variables
+let lon = "";
+let lat = "";
 
 //Function gets the longitude and latitude from the navigator to get the current weather in these location
 window.addEventListener("load",() => {
@@ -111,7 +112,7 @@ async function searchWeather(city){
   try{
     const response = await fetch(url_base +'weather?'+ 'q='+ city + '&appid=' + apiId + '&units=metric');
 
-    if(response.status === 200){
+    if(response.status == 200){
       const data = await response.json();
       console.log(data);          
       let city = data.name;
@@ -130,6 +131,8 @@ async function searchWeather(city){
         `;            
       card.innerHTML = Html;
 
+    }else if(response.status == 404){
+      alert("city not founded");
     }
   } 
   catch(error){
