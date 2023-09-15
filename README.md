@@ -1,6 +1,6 @@
 # Meteorology app
 
-Hello everyone, welcome to :tw-1f304:** METEOROLOGY APP ** :tw-1f303:
+Hello everyone, welcome to ** METEOROLOGY APP **
 
 This app is capable of searching for the weather by entering the name of the city in the search engine.
 
